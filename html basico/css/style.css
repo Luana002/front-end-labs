@@ -9,12 +9,17 @@
     --color-border: #ccc;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: var(--color-primary);
     font-family: var(--font-default);
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
+    width: auto;
 }
 h1 {
     background-image: url(../img/sobre-background.jpg);

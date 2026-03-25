@@ -19,7 +19,6 @@ body {
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
 }
 h1 {
     background-image: url(../img/sobre-background.jpg);
@@ -30,7 +29,7 @@ h2 {
     border-bottom: 2px groove #333333;
     margin-top: 30px;
     font-family: var(--font-secodary-title-weigh);
-    font-family: var(--font-secorady-title-wg);
+    font-weight: var(--font-secorady-title-wg);
 }
 figure {
     background-color: var(--color-bkg-figures);
@@ -41,9 +40,8 @@ figure {
 }
 p {
     font-style: italic;
-    margin-top: 10px;
-    margin: 45px;
-    padding: 0 45px;
+    margin: 15px 0;
+    padding: 0 20px;
     text-indent: 15px;
     text-align: justify;
 }

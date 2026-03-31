@@ -1,8 +1,27 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-h1 {
-    color: blueviolet;
+.titulo-principal {
+    color: rgb(26, 5, 46);
     font-style: italic;
+    font-size: 40px;
+
+}
+.titulo.secundario {
+    text-align: center;
+}
+.primeiro-titulo-secundario {
+    color:aqua;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.font-titulos {
+    font-family: Vardana, Gavena, Tahoma, sans-serif;
+}
+
+.segundo-titulo-secundario {
+    color: blue;
+    font-style: italic;
+    font-size: 30px;
 }

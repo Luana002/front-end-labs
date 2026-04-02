@@ -3,10 +3,25 @@
     --font-principal-title: "Archivo Black", sans-serif;
     --font-secodary-title-weigh:  "Roboto", sans-serif;
     --font-secorady-title-wg: 900;
+    --font-size-small: 0.8rem;
 
+    /*paleta de cores*/
     --color-primary: #333;
     --color-bkg-figures: #f2f2f2;
     --color-border: #ccc;
+    --color-base-footer: #777;
+
+    /*tamanho de imagens*/
+    --logo-width: 94px;
+
+    /*Espaçamento*/
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 32px;
+
+    /*Border-radius*/
+    --border-width: 1px;
+    --border-radius: 10px;
 }
 
 body {
@@ -53,18 +68,26 @@ figcaption {
     width: 550px;
 }
 
-#rodape {
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
-}
-#rodape img {
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-}
-
 #familia-pelho {
     float: right;
     margin: 0 0 20px 10px;
+}
+
+/*componente rodape*/
+#rodape {
+    margin: var(--space-3) 0;
+    padding: var(--space-3) 0;
+    color: var(--color-base-footer);
+    border-top: var(--border-width) solid var(--color-border);
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    justify-content: center;
+}
+
+.footer_logo {
+    width: var(--logo-width);
 }

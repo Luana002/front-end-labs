@@ -1,8 +1,8 @@
 :root {
-    --font-default: "Datatype", monospace;
-    --font-principal-title: "Archivo Black", sans-serif;
-    --font-secodary-title-weigh:  "Roboto", sans-serif;
-    --font-secorady-title-wg: 900;
+    --font-default: "Roboto", sans-serif;
+    --font-principal-title: "Playfair Display", serif;
+    --font-secondary-title: "Roboto", sans-serif;
+    --font-secondary-title-weight: 900;
     --font-size-small: 0.8rem;
 
     /*paleta de cores*/
@@ -10,6 +10,7 @@
     --color-bkg-figures: #f2f2f2;
     --color-border: #ccc;
     --color-base-footer: #777;
+    --color-link: #555;
 
     /*tamanho de imagens*/
     --logo-width: 94px;
@@ -22,59 +23,158 @@
     /*Border-radius*/
     --border-width: 1px;
     --border-radius: 10px;
+
+    /*Layout*/
+    --max-width: 940px;
 }
 
 body {
     color: var(--color-primary);
     font-family: var(--font-default);
-    width: 940px;
+    max-width: var(--max-width);
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 var(--space-2);
 }
-h1 {
+
+/* ===== Componente: header ===== */
+.header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) 0;
+    border-bottom: var(--border-width) solid var(--color-border);
+    margin-bottom: var(--space-3);
+}
+
+.header_logo {
+    width: var(--logo-width);
+}
+
+.header_title {
     background-image: url(../img/sobre-background.jpg);
-    padding: 10px;
+    padding: var(--space-1) var(--space-2);
     font-family: var(--font-principal-title);
+    flex: 1;
 }
-h2 {
-    border-bottom: 2px groove #333333;
-    margin-top: 30px;
-    font-family: var(--font-secodary-title-weigh);
-    font-weight: var(--font-secorady-title-wg);
+
+/* ===== Componente: intro ===== */
+.intro {
+    margin-bottom: var(--space-3);
 }
-figure {
-    background-color: var(--color-bkg-figures);
-    border: 1px solid var(--color-border);
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
-}
-p {
+
+.intro_text {
     font-style: italic;
-    margin: 15px 0;
-    padding: 0 20px;
+    margin: var(--space-2) 0;
+    padding: 0 var(--space-2);
     text-indent: 15px;
     text-align: justify;
 }
-figcaption {
+
+.intro_text a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.intro_figure {
+    background-color: var(--color-bkg-figures);
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: var(--space-2);
+    margin: var(--space-3) auto;
+    max-width: 580px;
+}
+
+.intro_figure-caption {
     font-style: italic;
-    margin-top: 10px;
-    font-family: var(--font-secodary-title-weigh);
+    margin-top: var(--space-1);
+    font-family: var(--font-secondary-title);
 }
 
-#centro-distribuicao {
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+/* ===== Componente: history ===== */
+.history {
+    margin-bottom: var(--space-3);
 }
 
-#familia-pelho {
-    float: right;
-    margin: 0 0 20px 10px;
+.history_title {
+    border-bottom: 2px groove #333333;
+    margin-top: var(--space-3);
+    font-family: var(--font-secondary-title);
+    font-weight: var(--font-secondary-title-weight);
+    padding-bottom: var(--space-1);
 }
 
-/*componente rodape*/
-#rodape {
+.history_content {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    margin-top: var(--space-2);
+}
+
+.history_figure {
+    background-color: var(--color-bkg-figures);
+    border: var(--border-width) solid var(--color-border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: var(--space-2);
+    flex-shrink: 0;
+    max-width: 260px;
+}
+
+.history_figure-caption {
+    font-style: italic;
+    margin-top: var(--space-1);
+    font-family: var(--font-secondary-title);
+}
+
+.history_text {
+    flex: 1;
+}
+
+.history_text p {
+    font-style: italic;
+    margin: var(--space-2) 0;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+/* ===== Componente: differentials ===== */
+.differentials {
+    margin-bottom: var(--space-3);
+}
+
+.differentials_title {
+    border-bottom: 2px groove #333333;
+    margin-top: var(--space-3);
+    font-family: var(--font-secondary-title);
+    font-weight: var(--font-secondary-title-weight);
+    padding-bottom: var(--space-1);
+}
+
+.differentials_content {
+    padding: var(--space-2);
+}
+
+.differentials_list {
+    padding: var(--space-2) var(--space-3);
+}
+
+.differentials_item {
+    margin: var(--space-1) 0;
+    padding: var(--space-1) 0;
+    border-bottom: var(--border-width) solid var(--color-bkg-figures);
+    list-style-type: disc;
+}
+
+.differentials_item a {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+/* ===== Componente: footer ===== */
+.footer {
     margin: var(--space-3) 0;
     padding: var(--space-3) 0;
     color: var(--color-base-footer);

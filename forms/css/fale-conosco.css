@@ -1,0 +1,11 @@
+:root {
+    --border-radius: 3px;
+}
+div {
+    background-color: #e3f0f0 ;
+    border-radius: var(--border-radius);
+}
+.container {
+    border: none;
+    border-radius: var(--border-radius);
+}

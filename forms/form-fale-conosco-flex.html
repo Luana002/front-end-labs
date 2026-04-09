@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+    <link rel="stylesheet" href="./css/fale-conosco.css">
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <h1>Fale conosco</h1>
+        <p>Estamos aqui para ajudar! Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>
+    </header>
+
+    <form action="#">
+        <div class="form-group">
+            <label for="last_name">Primeiro nome</label>
+            <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            placeholder="seu nome..."
+            required
+            maxlength="10"
+            minlength="2"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="">Último nome</label>
+            <input 
+            type="text" 
+            id="lest_name" 
+            name="lest_name" 
+            placeholder="seu sobrenome..."
+            required
+            maxlength="10"
+            minlength="2"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="">E-mail</label>
+        <input 
+        type="email" 
+        name="email" 
+        id="email"
+        placeholder="seu email..."
+        required
+        maxlength="60"
+        minlength="2"
+        >
+        </div>
+
+        <div class="form-group">
+            <label for="">País</label>
+            <select name="pais" id="pais">
+                <option disabled selected>Selecione seu país</option>
+                <option value="">Brasil</option>
+                <option value="">Argentina</option>
+                <option value="">Venezuela</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="">Assunto</label>
+            <textarea 
+            name="message" 
+            id="message" 
+            placeholder="Escreva aqui"
+            required
+            maxlength="500"
+            >
+        </textarea>
+        </div>
+
+        <div class="btn-container">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+
+        <footer class="footer-contact">
+            <p>Em caso de dúvidas entre em contato</p>
+        </footer>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,27 +1,48 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-.titulo-principal {
-    color: rgb(26, 5, 46);
-    font-style: italic;
-    font-size: 40px;
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
 }
-.titulo.secundario {
+
+.header_nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.products {
+    padding: 20px;
+}
+
+.products_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product_card {
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: center;
 }
-.primeiro-titulo-secundario {
-    color:aqua;
-    font-style: italic;
-    font-size: 30px;
+
+.product_card img {
+    width: 100%;
 }
 
-.font-titulos {
-    font-family: Vardana, Gavena, Tahoma, sans-serif;
-}
-
-.segundo-titulo-secundario {
-    color: blue;
-    font-style: italic;
-    font-size: 30px;
+button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
 }

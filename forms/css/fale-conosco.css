@@ -1,11 +1,69 @@
 :root {
-    --border-radius: 3px;
+    --bg: #f7f5f4;
+    --container: #e3f0f0;
+    --primary: #4CAF50;
+    --radius: 8px;
+    --btn-submit: #3f009e;
+    --btn-reset: #ccc;
 }
-div {
-    background-color: #e3f0f0 ;
-    border-radius: var(--border-radius);
+
+body {
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
+
 .container {
+    background: var(--container);
+    padding: 25px;
+    border-radius: var(--radius);
+    max-width: 400px;
+    width: 100%;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
     border: none;
-    border-radius: var(--border-radius);
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary { 
+    background: var(--primary); 
+    color: white; 
+}
+
+.btn-reset { 
+    background: #e0e0e0; 
+}
+
+.btn:hover { 
+    opacity: 0.8; 
+}
+
+[type="submit"] {
+    background-color: var(--btn-submit);
+    color: white;
+}
+[type="reset"] {
+    background-color: var(--btn-reset);
 }
